@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+ }
+
+ .logo{ /* cambia el tamaño del logo del cine*/
+    height: 100px;
+    width: 130 px;
+    cursor: pointer;
+    margin-left: 25px;
+   
+ }
+ h2{
+  font-size: 100px;
+  text-align: center;
+  font-family:fantasy;
+  padding-left: 180px;
+ 
+ }
+ .navbar{ /* ajusta la barra */
+   background-color:#B90000;
+   width: 100%;
+   margin: auto;
+   padding: 35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .navbar ul li{ /* ajusta la lista */
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+ }
+ .navbar ul li a { /* ajusta la lista*/
+   text-decoration: none;
+   color: black;
+   font-family:fantasy;
+   font-size: 1.2rem;
+ }
+ .navbar ul li::before{ /* efecto para cuando se pose sobre las opciones de la barra*/
+   content: "";
+   height: 3px;
+   width: 0%;
+   background: white;
+   position: absolute;
+   left: 0;
+   bottom: -12px;
+   transition: 0.4s ease-out;
+ }
+.navbar ul li:hover::before{ /* efecto para cuando se pose sobre las opciones de la barra*/
+   width: 100%;
+}
+h1{ /* centra y cambia el tamaño de los titulos de cada pagina*/
+   color: white;
+   font-size: 100PX;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.PelEstr { /* centra el trailer*/
+   text-align: center;
+}
+.PelEstr iframe{ /* ajusta el tamaño del trailer*/
+   width: 1000px;
+   height: 500px;
+   padding-top: 50px;
+}
+
+.form{ /* ajusta el formulario*/
+   margin-top: 30px;
+   font-size: 30px;
+   text-align: center;
+   background-color: #000000;
+}
+
+ .cartel{ /*cambia el tamaño de las peluclas*/
+   width: 350px;
+   height: 300px;
+ }
+
+
+.pelicula{ /* acomoda el afiche de la pelicula*/
+   padding: 25px;
+   display: flex;
+   
+}
+
+.pelicula img{ /* margen entre afiche de pelicula y parrafo*/
+   margin-right: 20px;
+  
+}
+ 
+
+
+
+
+footer{ /* pie de pagina*/
+   background-color: #B90000;   
+   margin-top: 50px;
+   text-align: center;
+}
+
+
+h3, h6, label{
+   color: white;
+}
+
+p{
+   color: white;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4,a{
+   color: #9F9D9D;
+}
+.botEnv{
+  border: 3px solid whitesmoke; 
+  border-radius: 3px;
+
+}
+/* pruebaaa*/
