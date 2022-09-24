@@ -2,7 +2,7 @@ import './App.css';
 import Barra from './components/Barra';
 import Footer from './components/Footer';
 import Pelicula from './components/Pelicula';
-import peliculas from './components/peliculas.json';
+import peliculas from "./components/json/peliculas.json"
 
 function App() {
   return (
