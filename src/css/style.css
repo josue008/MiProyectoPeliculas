@@ -1,122 +1,141 @@
-*{
-    margin:0;
-    padding: 0;
- }
+/* Reset de márgenes y paddings */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
- .logo{ /* cambia el tamaño del logo del cine*/
-    height: 100px;
-    width: 130 px;
-    cursor: pointer;
-    margin-left: 25px;
-   
- }
- h2{
-  font-size: 100px;
-  text-align: center;
-  font-family:fantasy;
-  padding-left: 180px;
- 
- }
- .navbar{ /* ajusta la barra */
-   background-color:#B90000;
+/* Estilos del logo */
+.logo {
+   height: 100px;
+   width: 130px; /* Se eliminó el espacio extra que causaba error */
+   cursor: pointer;
+   margin-left: 25px;
+}
+
+/* Estilos generales */
+h1, h2 {
+   text-align: center;
+   font-family: fantasy;
+}
+
+h1 {
+   color: white;
+   font-size: 100px;
+}
+
+h2 {
+   font-size: 100px;
+   padding-left: 180px;
+}
+
+/* Barra de navegación */
+.navbar {
+   background-color: #B90000;
    width: 100%;
-   margin: auto;
    padding: 35px 0;
    display: flex;
    align-items: center;
    justify-content: space-between;
- }
- .navbar ul li{ /* ajusta la lista */
+}
+
+.navbar ul {
    list-style: none;
-   display: inline-block;
-   margin: 0 20px;
+   display: flex;
+   gap: 20px;
+}
+
+.navbar ul li {
    position: relative;
- }
- .navbar ul li a { /* ajusta la lista*/
+}
+
+.navbar ul li a {
    text-decoration: none;
    color: black;
-   font-family:fantasy;
+   font-family: fantasy;
    font-size: 1.2rem;
- }
- .navbar ul li::before{ /* efecto para cuando se pose sobre las opciones de la barra*/
+}
+
+.navbar ul li::before {
    content: "";
    height: 3px;
-   width: 0%;
+   width: 0;
    background: white;
    position: absolute;
    left: 0;
    bottom: -12px;
    transition: 0.4s ease-out;
- }
-.navbar ul li:hover::before{ /* efecto para cuando se pose sobre las opciones de la barra*/
+}
+
+.navbar ul li:hover::before {
    width: 100%;
 }
-h1{ /* centra y cambia el tamaño de los titulos de cada pagina*/
-   color: white;
-   font-size: 100PX;
-   text-align: center;
-   font-family:Verdana, Geneva, Tahoma, sans-serif
 
+/* Contenedor de películas */
+.peliculas-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 20px;
 }
 
-.PelEstr { /* centra el trailer*/
-   text-align: center;
+.pelicula {
+   width: 300px;
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-.PelEstr iframe{ /* ajusta el tamaño del trailer*/
-   width: 1000px;
-   height: 500px;
+
+.pelicula img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+/* Trailer */
+.PelEstr {
+   text-align: center;
    padding-top: 50px;
 }
 
-.form{ /* ajusta el formulario*/
+.PelEstr iframe {
+   width: 1000px;
+   height: 500px;
+}
+
+/* Formulario */
+.form {
    margin-top: 30px;
    font-size: 30px;
    text-align: center;
    background-color: #000000;
+   padding: 20px;
 }
 
- .cartel{ /*cambia el tamaño de las peluclas*/
-   width: 350px;
-   height: 300px;
- }
-
-
-.pelicula{ /* acomoda el afiche de la pelicula*/
-   padding: 25px;
-   display: flex;
-   
-}
-
-.pelicula img{ /* margen entre afiche de pelicula y parrafo*/
-   margin-right: 20px;
-  
-}
- 
-
-
-
-
-footer{ /* pie de pagina*/
-   background-color: #B90000;   
+/* Pie de página */
+footer {
+   background-color: #B90000;
    margin-top: 50px;
    text-align: center;
+   padding: 20px;
 }
 
-
-h3, h6, label{
+h3, h6, label {
    color: white;
 }
 
-p{
+p {
    color: white;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h4,a{
+
+h4, a {
    color: #9F9D9D;
 }
-.botEnv{
-  border: 3px solid whitesmoke; 
-  border-radius: 3px;
 
+.botEnv {
+   border: 3px solid whitesmoke;
+   border-radius: 3px;
 }
-/* pruebaaa*/
